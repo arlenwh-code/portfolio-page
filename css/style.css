@@ -1,0 +1,259 @@
+a:-webkit-any-link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.flex-item{
+  width: 200px;
+  height: 200px;
+}
+
+.header{
+display: flex;
+justify-content:flex-start;
+background-color: #31326F;
+}
+
+.logo{
+  background-color: #31326F;
+  width: 200px;
+  height: 225px;
+}
+
+.nav{
+  background-color: #31326F;
+  margin-left: auto;
+  width: 500px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+.nav > ul{
+  list-style: none;
+}
+
+.nav li {
+  display: inline;
+  padding-right: 30px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #fff;
+}
+
+.banner{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-img{
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.subtitle{
+  background-color: #31326F;
+  color: #fff;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  margin-right: 20px;
+  align-self: flex-end;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.5em;;
+}
+
+.content1{
+  display: flex;
+}
+
+.about-me, .work, .contact-me{
+  background-color: #31326F;
+  display: flex;
+  width: 284px;
+  justify-content: center;
+  align-items: center;
+  font-family:  'Montserrat', Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.article{
+  flex-grow: 1;
+  background-color: #fff;
+  border-bottom: 2px solid #000;
+  display: flex;
+  height: 198px;
+  font-size: 2vw;
+  align-items: center;
+}
+
+.profile-pic{
+  position: relative;
+  left: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+  margin:0 35px 0 30px;
+}
+
+.content2{
+  display: flex;
+  border: 2px solid #000;
+}
+
+.work{
+align-items: flex-start;
+width: 282px;
+height: 600px;
+}
+
+.projects{
+  display: flex;
+  flex-grow: 1;
+  height: 600px;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.main-project{
+  border: 2px solid #000;
+  display: flex;
+  height: 300px;
+  flex-grow: 1;
+}
+
+.pimg1{
+width: 100%;
+height: auto;
+}
+
+.mp-caption{
+  border: 2px solid #000;
+  width: 200px;
+  height: 70px;
+  align-self: flex-end;
+  margin-bottom: 40px;
+  position: absolute;
+}
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 99.8%;
+  height: 200px;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-box{
+  border: 2px solid #000;
+  flex-basis: 49%;
+}
+
+.pimg2, .pimg3, .pimg4, .pimg5{
+  width: 100%;
+  height: 100px;
+}
+
+.content3{
+  display: flex;
+  border: 2px solid #000;
+}
+
+.contact-me{
+  width: 282px;
+}
+
+.contact-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infobox{
+  border: 2px solid #000;
+  height: 50px
+}
+
+@media screen and (min-width: 576px){
+  .nav > ul {
+    margin-left: 30px;
+    padding: 2px;
+    font-size: small;
+  }
+
+  .profile-pic{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .project-box{
+    border: 2px solid #000;
+    flex-basis: 35%;
+  }
+
+  .about-me {
+    width: 132px;
+  }
+
+  .work{
+    width: 130px;
+  }
+  .contact-me{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .nav > ul {
+    position: relative;
+    bottom: 50px;
+    margin-left: 0px;
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .profile-pic{
+    margin: 0 10px 0 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .article{
+    font-size: 3.5vw;
+  }
+  
+  .project-box{
+    border: 2px solid #000;
+    flex-basis: 35%;
+  }
+
+  .mp-caption{
+    width: 100px;
+  }
+
+  .about-me {
+    width: 132px;
+  }
+
+  .work{
+    width: 130px;
+  }
+  .contact-me{
+    width: 130px;
+  }
+
+}
